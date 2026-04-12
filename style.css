@@ -277,3 +277,20 @@ footer {
         left: 14px;
     }
 }
+
+/* Story Abschnitt */
+.story p {
+    margin-bottom: 18px;
+}
+
+/* Hervorhebungen */
+.highlight {
+    color: var(--accent-color);
+    font-weight: 500;
+}
+
+/* Letzter Satz (emotionaler Abschluss) */
+.final-line {
+    margin-top: 25px;
+    font-style: italic;
+}
