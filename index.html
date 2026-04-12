@@ -1,6 +1,16 @@
 <!DOCTYPE html>
+<meta name="robots" content="noindex">
 <html lang="de">
 <head>
+    <script>
+    var passwort = "hochzeit2026";  // ← HIER dein Passwort ändern
+    var eingabe = prompt("Bitte gib das Passwort für unsere Hochzeitsseite ein:");
+
+    if (eingabe !== passwort) {
+        document.write("<h1 style='text-align:center; margin-top:50px;'>Zugriff verweigert 💔</h1>");
+        document.write("<p style='text-align:center;'>Bitte wende dich an Gabriel & Tasja.</p>");
+    }
+</script>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Tasja & Gabriel – Wir heiraten!</title>
