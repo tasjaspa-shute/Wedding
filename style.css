@@ -272,3 +272,44 @@ footer {
     background: var(--accent-color);
     margin: 10px auto 0;
 }
+/* Standesamtliche Trauung – elegante Karte */
+.civil {
+    margin: 60px auto;
+    padding: 0 20px;
+}
+
+.civil-card {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 30px 25px;
+    background: #fff;
+    border: 1px solid #E5D8C7;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+}
+
+/* Titel */
+.civil-title {
+    font-family: "Playfair Display", serif;
+    font-size: 1.2rem;
+    letter-spacing: 2px;
+    color: var(--accent-color);
+    margin-bottom: 15px;
+}
+
+/* Hinweis */
+.civil-note {
+    margin-top: 15px;
+    font-style: italic;
+    font-size: 0.95rem;
+}
+
+.civil-card::before {
+    content: "";
+    display: block;
+    width: 40px;
+    height: 1px;
+    background: var(--accent-color);
+    margin: 0 auto 15px;
+}
