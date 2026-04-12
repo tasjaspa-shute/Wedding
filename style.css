@@ -182,3 +182,97 @@ footer {
         font-size: 0.9rem;
     }
 }
+
+/* Timeline */
+.timeline {
+    position: relative;
+    margin-top: 40px;
+    padding-left: 20px;
+}
+
+/* Linie */
+.timeline::before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 0;
+    width: 2px;
+    height: 100%;
+    background: var(--accent-color);
+    transform: translateX(-50%);
+}
+
+/* Elemente */
+.timeline-item {
+    position: relative;
+    width: 50%;
+    padding: 20px 30px;
+    box-sizing: border-box;
+}
+
+/* Links */
+.timeline-item:nth-child(odd) {
+    left: 0;
+    text-align: right;
+}
+
+/* Rechts */
+.timeline-item:nth-child(even) {
+    left: 50%;
+}
+
+/* Punkte */
+.timeline-item::before {
+    content: "";
+    position: absolute;
+    top: 25px;
+    width: 12px;
+    height: 12px;
+    background: var(--accent-color);
+    border-radius: 50%;
+}
+
+/* Punkt links */
+.timeline-item:nth-child(odd)::before {
+    right: -6px;
+}
+
+/* Punkt rechts */
+.timeline-item:nth-child(even)::before {
+    left: -6px;
+}
+
+/* Zeit */
+.timeline .time {
+    font-weight: bold;
+    font-family: "Playfair Display", serif;
+    margin-bottom: 5px;
+}
+
+/* Text */
+.timeline .content {
+    font-size: 1rem;
+}
+
+/* Mobile Anpassung */
+@media (max-width: 768px) {
+    .timeline::before {
+        left: 20px;
+    }
+
+    .timeline-item {
+        width: 100%;
+        padding-left: 50px;
+        padding-right: 20px;
+        text-align: left;
+    }
+
+    .timeline-item:nth-child(odd),
+    .timeline-item:nth-child(even) {
+        left: 0;
+    }
+
+    .timeline-item::before {
+        left: 14px;
+    }
+}
