@@ -313,3 +313,22 @@ footer {
     background: var(--accent-color);
     margin: 0 auto 15px;
 }
+/* Sprach-Button */
+.language-switch {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    text-decoration: none;
+    color: var(--primary-color);
+    font-size: 0.9rem;
+    border: 1px solid var(--accent-color);
+    padding: 6px 12px;
+    border-radius: 20px;
+    background: white;
+    transition: 0.3s;
+}
+
+.language-switch:hover {
+    background: var(--accent-color);
+    color: white;
+}
